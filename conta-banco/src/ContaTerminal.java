@@ -1,5 +1,24 @@
+import java.util.Scanner;
+
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        int numeroDaConta;
+        String agencia;
+        String nomeDoCliente;
+        double saldo;
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Qual seu nome: ");
+        nomeDoCliente = scanner.nextLine();
+        System.out.println("Por favor, digite o número da agencia: ");
+        agencia = scanner.nextLine();
+        System.out.println("Agora digite o número da sua conta: ");
+        numeroDaConta = scanner.nextInt();
+        System.out.println("Qual valor do seu saldo: ");
+        saldo = scanner.nextDouble();
+
+
+
     }
 }
